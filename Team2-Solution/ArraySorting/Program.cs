@@ -10,6 +10,19 @@ namespace ArraySorting
     {
         static void Main(string[] args)
         {
+            int[] array = ArraySorter.PopulateArray();
+            Console.WriteLine("Unsorted array:");
+            ArraySorter.PrintArray(array);
+
+            int[] arraySortedAsc = ArraySorter.SortAscending(array);
+            Console.WriteLine("`nSorted in ascending order:");
+            ArraySorter.PrintArray(arraySortedAsc);
+
+            int[] arraySortedDesc = ArraySorter.SortDescending(array);
+            Console.WriteLine("`nSorted in descending order:");
+            ArraySorter.PrintArray(arraySortedDesc);
+
+            Console.ReadLine();
         }
     }
 }
