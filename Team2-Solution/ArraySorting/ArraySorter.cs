@@ -21,6 +21,11 @@ namespace ArraySorting
             int length = int.Parse(Console.ReadLine());
             int[] array = new int[length];
             // populating the array by asking the user to enter corresponding values
+            Console.WriteLine("Plese enter the values of the array's:");
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = int.Parse(Console.ReadLine());
+            }
 
             return array;
         }
