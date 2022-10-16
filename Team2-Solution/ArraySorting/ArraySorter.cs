@@ -12,6 +12,10 @@ namespace ArraySorting
         public static void PrintArray(int[] array)
         {
             Console.WriteLine("Printing the array:");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Element {i+1}: {array[i],5}");
+            }
         }
 
         // Function that allows the user to create and populate an array of Integers
