@@ -15,11 +15,11 @@ namespace ArraySorting
             ArraySorter.PrintArray(array);
 
             int[] arraySortedAsc = ArraySorter.SortAscending(array);
-            Console.WriteLine("`nSorted in ascending order:");
+            Console.WriteLine("\nSorted in ascending order:");
             ArraySorter.PrintArray(arraySortedAsc);
 
             int[] arraySortedDesc = ArraySorter.SortDescending(array);
-            Console.WriteLine("`nSorted in descending order:");
+            Console.WriteLine("\nSorted in descending order:");
             ArraySorter.PrintArray(arraySortedDesc);
 
             Console.ReadLine();
