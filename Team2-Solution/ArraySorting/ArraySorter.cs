@@ -38,16 +38,34 @@ namespace ArraySorting
         public static int[] SortAscending(int[] array)
         {
             // sorting
-
+            int temp;
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < array.Length - 1 - i; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
             return array;
         }
 
         // Function that sorts the input array of Integers from higher to lower and returns it
         public static int[] SortDescending(int[] array)
         {
+            int[] arrReverse = new int[array.Length];
+            int j = 0;
             // sorting
-
-            return array;
+            for(int i = array.Length - 1; i >=0; i--)
+            {
+                arrReverse[j] = array[i];
+                j++;
+            }
+            return arrReverse;
         }
     }
 }
